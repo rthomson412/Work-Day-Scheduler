@@ -46,4 +46,8 @@ $(document).ready(function() {
             eventDescription.val(savedValue);
         }
         
-       
+        var setTime = parseInt(moment().format("HH") + "00");
+        var setHour = parseInt(hour.nTime);
+
+        
+});
