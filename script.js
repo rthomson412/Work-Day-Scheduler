@@ -49,5 +49,16 @@ $(document).ready(function() {
         var setTime = parseInt(moment().format("HH") + "00");
         var setHour = parseInt(hour.nTime);
 
-        
+        if (setTime === setHour) {
+            eventDescription.addClass("present");
+        } else if (setHour <= setTime) {
+            eventDescription.addClass("past");
+        } else {
+            eventDescription.addClass("future");
+        }
+
+    $(".time-block").append(timeRow);
+        timeRow.append(eventDescription);
+        timeRow.append(saveBtn);
+    });
 });
