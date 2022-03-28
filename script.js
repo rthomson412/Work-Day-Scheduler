@@ -18,24 +18,32 @@ $(document).ready(function() {
         {sTime: "6pm", nTime: 1800}
     ];
 
-
-    var timeRow = $("<div>");
-    timeRow.attr("class", "row");
-
-    var timeSpan = $("<span>");
-    timeSpan.attr("class", "col-1 hour");
-    timeSpan.text(hour.sTime);
-    timeRow.append(timeSpan);
-
-    var eventDescription = $("<textarea>");
-    eventDescription.attr("class", "col description border");
     
-    var saveBtn = $("<button>");
-    saveBtn.attr("class", "saveBtn oi oi-plus");
+    time.map((hour) => {
 
-    saveBtn.on("click", function () {
-        var event = eventDescription.val();
-        localStorage.setItem(hour.stringTime, event);
-    });
+        var timeRow = $("<div>");
+        timeRow.attr("class", "row");
 
-    
+        var timeSpan = $("<span>");
+        timeSpan.attr("class", "col-1 hour");
+        timeSpan.text(hour.sTime);
+        timeRow.append(timeSpan);
+
+        var eventDescription = $("<textarea>");
+        eventDescription.attr("class", "col description border");
+        
+        var saveBtn = $("<button>");
+        saveBtn.attr("class", "saveBtn oi oi-plus");
+
+        saveBtn.on("click", function () {
+            var event = eventDescription.val();
+            localStorage.setItem(hour.sTime, event);
+        });
+
+        var savedValue = localStorage.getItem(hour.sTime);
+        console.log(savedValue)
+            if (savedValue) {
+            eventDescription.val(savedValue);
+        }
+        
+       
