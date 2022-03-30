@@ -33,7 +33,7 @@ $(document).ready(function() {
         eventDescription.attr("class", "col description border");
         
         var saveBtn = $("<button>");
-        saveBtn.attr("class", "saveBtn oi oi-plus");
+        saveBtn.attr("class", "saveBtn oi oi-task");
 
         saveBtn.on("click", function () {
             var event = eventDescription.val();

@@ -16,3 +16,10 @@ Simple  work planner application allowing to save, edit and view hourly tasks fr
 * Task persistence applied upon page refreshes.
 
 ## Web Page
+Deployed page:
+
+https://rthomson412.github.io/Work-Day-Scheduler/
+
+GitHub:
+
+https://github.com/rthomson412/Work-Day-Scheduler
