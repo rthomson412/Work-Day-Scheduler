@@ -23,3 +23,7 @@ https://rthomson412.github.io/Work-Day-Scheduler/
 GitHub:
 
 https://github.com/rthomson412/Work-Day-Scheduler
+
+Screenshot:
+
+![image](https://user-images.githubusercontent.com/96792780/160842300-f2a657d1-7185-4a4e-a3fa-d1ec7803f01b.png)
