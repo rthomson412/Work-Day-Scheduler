@@ -58,7 +58,7 @@ body {
   }
   
   .saveBtn {
-    border-left: 1px black;
+    border-left: 2px black;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 10px;
     background-color: #06AED6;
